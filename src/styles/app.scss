@@ -1,0 +1,33 @@
+@import '_settings.scss';
+@import '_base.scss';
+@import './components/_header.scss';
+
+main{
+    margin-top: 5rem;
+}
+.item-card {
+    margin-bottom: 10px;
+    max-width: 250px;
+    width: 250px;
+}
+
+/* iPads (portrait) ----------- */
+@media (min-width : 768px) 
+    and (orientation : portrait) {
+    .custom-flex{
+        .item-card {
+            width: auto;
+        }
+    }
+
+}
+
+@media (max-width: 575.98px) { 
+    .custom-flex{
+        flex-direction: column !important;
+        .item-card {
+            width: auto;
+            max-width: 100%;
+        }
+    }
+ }
